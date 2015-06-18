@@ -5,6 +5,6 @@ var contactsApp = angular.module('contactsApp', []);
       $http({method: 'GET', url: 'contacts.php'}).success(function(data){
         $scope.contact = data;
       });
-    $scope.sortField = 'fname';
+    $scope.sortField = 'contact';
     $scope.reverse = true;
 }]);

@@ -20,13 +20,13 @@
       <input type="text" ng-model="contactFilter" class="form-control"/>
         <table class="table">
           <thead>
-            <th><a href="" ng-click="sortField='name'; reverse = !reverse">First Name</a></th>
-            <th><a href="" ng-click="sortField='founded'; reverse = !reverse">Last Name</a></th>
-            <th><a href="" ng-click="sortField='city'; reverse = !reverse">Address</a></th>
-            <th><a href="" ng-click="sortField='stadium'; reverse = !reverse">City</a></th>
-            <th><a href="" ng-click="sortField='capacity'; reverse = !reverse">Zipcode</a></th>
-            <th><a href="" ng-click="sortField='manager'; reverse = !reverse">Mobile Number</a></th>
-            <th><a href="" ng-click="sortField='manager'; reverse = !reverse">Cell Number</a></th>
+            <th><a href="" ng-click="sortField='fname'; reverse = !reverse">First Name</a></th>
+            <th><a href="" ng-click="sortField='lname'; reverse = !reverse">Last Name</a></th>
+            <th><a href="" ng-click="sortField='address'; reverse = !reverse">Address</a></th>
+            <th><a href="" ng-click="sortField='city'; reverse = !reverse">City</a></th>
+            <th><a href="" ng-click="sortField='zipcode'; reverse = !reverse">Zipcode</a></th>
+            <th><a href="" ng-click="sortField='mnumber'; reverse = !reverse">Mobile Number</a></th>
+            <th><a href="" ng-click="sortField='lnumber'; reverse = !reverse">Cell Number</a></th>
           </thead>
           <tr ng-repeat="contact in contacts | filter:contactFilter | orderBy:sortField:reverse">
             <td><a href="{{ contact.fname }}" target="_blank">{{ contact.fname }}</a></td>
