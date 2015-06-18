@@ -8,7 +8,7 @@ $database = "contacts";
 mysql_connect("$hostname", "$user", "$pass") or die(mysql_error(god dammit));
 mysql_select_db("$database") or die(mysql_error(got dammit));
 
-$sql = "select * from contactList";
+$sql = "select * FROM contactList";
 
 $result = mysql_query($sql);
 $json = array();
