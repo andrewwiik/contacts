@@ -1,6 +1,6 @@
 <?php
 //Set variabloes and locations for the connection.
-$hostname = "localhost";
+$hostname = "45.55.195.17";
 $user = "root";
 $pass = "Sticker101?";
 $database = "contacts";
