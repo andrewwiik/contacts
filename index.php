@@ -46,7 +46,7 @@
     <!-- Include AngularJS -->
     <script src="js/angular.min.js"></script>
     <!-- Linking to the football app script -->
-    <script src="js/footballApp.js"></script>
+    <script src="js/contactsApp.js"></script>
 
   </body>
 </html>
