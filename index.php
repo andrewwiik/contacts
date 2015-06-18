@@ -28,7 +28,7 @@
             <th><a href="" ng-click="sortField='mnumber'; reverse = !reverse">Mobile Number</a></th>
             <th><a href="" ng-click="sortField='lnumber'; reverse = !reverse">Cell Number</a></th>
           </thead>
-          <tr ng-repeat="contact in contacts | filter:contactFilter | orderBy:sortField:reverse">
+          <tr ng-repeat="contact in contact | filter:contactFilter | orderBy:sortField:reverse">
             <td><a href="{{ contact.fname }}" target="_blank">{{ contact.fname }}</a></td>
             <td>{{ contact.lname }}</td>
             <td>{{ contact.address }}</td>
@@ -46,7 +46,7 @@
     <!-- Include AngularJS -->
     <script src="js/angular.min.js"></script>
     <!-- Linking to the football app script -->
-    <script src="js/contactsApp.js"></script>
+    <script src="js/contactApp.js"></script>
 
   </body>
 </html>

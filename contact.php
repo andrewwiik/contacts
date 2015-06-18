@@ -5,8 +5,8 @@ $user = "root";
 $pass = "Sticker101?";
 $database = "contacts";
 //connection string and die if fails
-mysql_connect("$hostname", "$user", "$pass") or die(mysql_error());
-mysql_select_db("$database") or die(mysql_error());
+mysql_connect("$hostname", "$user", "$pass") or die(mysql_error(god dammit));
+mysql_select_db("$database") or die(mysql_error(got dammit));
 
 $sql = "select * from contactList";
 
