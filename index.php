@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="contactsApp">
+<html lang="en" ng-app="contactApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,7 @@
           </thead>
           <tr ng-repeat="contact in contacts | filter:contactFilter | orderBy:sortField:reverse">
             <td><a href="{{ contact.fname }}" target="_blank">{{ contact.fname }}</a></td>
-            <td>{{ contact.lname}}</td>
+            <td>{{ contact.lname }}</td>
             <td>{{ contact.address }}</td>
             <td>{{ contact.city }}</td>
             <td>{{ contact.zipcode }}</td>
