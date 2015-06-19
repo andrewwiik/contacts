@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1);
 //Set variabloes and locations for the connection.
 $hostname = "45.55.195.17";
 $user = "root";
